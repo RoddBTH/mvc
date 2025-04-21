@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Report{% endblock %}
+
+{% block body %}
+    <h1>Redovisningstexter</h1>
+    <div class="two-columns">
+        <div class="column wide-column">
+            {% for kmom, report in reports %}
+                <section id="{{ kmom }}" class="report-section">
+                    <h2>{{ report.title }}</h2>
+                    <p>{{ report.content }}</p>
+                </section>
+            {% endfor %}
+        </div>
+
+        <div class="column narrow-column">
+            <h2>Innehållsförteckning</h2>
+            <ul>
+                {% for kmom, report in reports %}
+                    <li><a href="#{{ kmom }}">{{ report.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

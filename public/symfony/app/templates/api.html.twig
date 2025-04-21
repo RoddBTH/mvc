@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}API Documentation{% endblock %}
+
+{% block body %}
+    <h1>API Documentation</h1>
+    <div class="api-endpoints">
+        {% for endpoint in endpoints %}
+            <div class="endpoint-card">
+                <h2>{{ endpoint.description }}</h2>
+                <p><strong>Route:</strong> <code>{{ endpoint.route }}</code></p>
+                <p><strong>Methods:</strong> {{ endpoint.methods|join(', ') }}</p>
+                <a href="{{ endpoint.route }}" class="btn">Try it</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

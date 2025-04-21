@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="lucky-container">
+        <h1>Your Lucky Number Is: {{ lucky_number }}</h1>
+        {% if lucky_number > 25 %}
+            <img src="{{ asset('img/speed-1.gif') }}" alt="Happy face">
+        {% else %}
+            <img src="{{ asset('img/catbite.gif') }}" alt="Sad face">
+        {% endif %}
+    </div>
+{% endblock %}
