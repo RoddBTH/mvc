@@ -32,11 +32,16 @@ class HomeController extends AbstractController
                 Men vad är då ett objekt? Ett objekt är en kokret instans av en klass, alltså om klassen är en ritning, så är objketet det färdiga huset byggt från  den ritningen.
                 Jag tyckte kodbasen var relativt lätt att förstå, det var en tydligt struktur och det var lätt att se vad respektive mapp och fil gör.
                 Det jag skulle vilja lära mig lite mer om med tanke på artikeln "PHP the right way" skulle vara API-Utveckling, alltså JSON svar som vi höll på med i detta kmom, men även JWT-autentisering samt OpenAPI/Swagger för dokumentation.
-                Mitt TIL är hur man kommer igång med Symfony'
+                Mitt TIL är hur man kommer igång med Symfony!'
             ],
             'kmom02' => [
                 'title' => 'Kmom02',
                 'content' => 'Här är min redovisningstext för kmom02...'
+            ],
+
+            'kmom03' => [
+                'title' => 'Kmom03',
+                'content' => 'Här är min redovisningstext för kmom03...'
             ],
             // Add more kmom as needed
         ];
