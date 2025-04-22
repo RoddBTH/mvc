@@ -59,7 +59,7 @@ h1 {
     max-height: 1000px;
     max-width: 1500px;
     flex: 1;
-    background-image: url("/img/jag.jpg");
+    background-image: url("../img/jag.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
